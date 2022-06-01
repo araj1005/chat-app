@@ -1,3 +1,5 @@
+const { EmojiButton } = require("@joeattardi/emoji-button")
+
 const socket = io()
 
 
@@ -11,8 +13,27 @@ const socket = io()
   const messageTemplate = document.querySelector('#message-template').innerHTML
   const locationMessageTemplate = document.querySelector('#location-message-template').innerHTML
   const sidebarTemplate = document.querySelector('#sidebar-template').innerHTML
-
+  const emojiBtn = document.querySelector('#emoji-btn');
+  const picker = new EmojiButton();
   // Options
+  // Emoji selection  
+window.addEventListener('DOMContentLoaded', () => {
+
+    picker.on('emoji', emoji => {
+      document.querySelector('input').value += emoji;
+    });
+  
+    emojiBtn.addEventListener('click', () => {
+      picker.togglePicker(emojiBtn);
+    });
+  });        
+
+//   chat button toggler 
+
+chatBtn.addEventListener('click', ()=>{
+    popup.classList.toggle('show');
+})
+  
   const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true})
 
   const autoscroll = () => {
