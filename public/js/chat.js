@@ -13,7 +13,8 @@ const socket = io()
   const messageTemplate = document.querySelector('#message-template').innerHTML
   const locationMessageTemplate = document.querySelector('#location-message-template').innerHTML
   const sidebarTemplate = document.querySelector('#sidebar-template').innerHTML
-  const emojiBtn = document.querySelector('#n');
+  const emojiBtn = document.querySelector('#emoji-btn');
+  const chatBtn = document.querySelector('.chat-btn');
   const picker = new EmojiButton();
   // Options
   // Emoji selection  
