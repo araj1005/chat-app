@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
     <title>Chat App</title>
     <linK rel="icon" href="/img/favicon.png">
         <link rel="stylesheet" href="/css/styles.min.css">
-        <!--
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" integrity="sha512-vEia6TQGr3FqC6h55/NdU3QSM5XR6HSl5fW71QTKrgeER98LIMGwymBVM867C1XHIkYD9nMTfWK2A0xcodKHNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        -->
     </head>
     <body>
         <div class="chat">
@@ -23,29 +19,10 @@
                     <button>Send</button>
                 </form>
                 <button id="send-location">Send location</button> 
-                <button id="emoji">&#58388;</button> 
-                <!--
-                <h1>add emoji in text area like chat</h1>>
-                <div class="container">
-                    <textarea id="myText"></textarea>
-                </div>
-                -->
             </div>
         </div>
      </div>
             
-     <!--
-     <script>
-        tinymce.init({
-          selector: "#message",
-          plugins: "emoticons",
-          toolbar: "emoticons",
-          toolbar_location: "bottom",
-          menubar: false
-        });
-      </script>
-        -->
-
         <script id="message-template" type="text/html">
             <div class="message">
                 <p>
@@ -75,21 +52,11 @@
             {{/users}}
         </ul>
         </script>
-       
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js" integrity="sha512-hkvXFLlESjeYENO4CNi69z3A1puvONQV5Uh+G4TUDayZxSLyic5Kba9hhuiNLbHqdnKNMk2PxXKm0v7KDnWkYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript">
-            $('message-form').emojioneArea({
-                pickerPosition:'right'
-            })
 
-        </script>>
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-        mkdir<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="/js/chat.js"></script>
     </body>
 </html>
-

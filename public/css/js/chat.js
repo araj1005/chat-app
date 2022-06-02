@@ -15,13 +15,6 @@ const socket = io()
   // Options
   const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true})
 
-  const emoji = require('node-emoji');
-
-const { log } = console;
-
-const pizza = emoji.get('pizza');
-log(pizza);
-
   const autoscroll = () => {
 
    const $newMessage = $messages.lastElementChild

@@ -6,6 +6,14 @@ const Filter = require('bad-words')
 const { generateMessage, generateLocationMessage } = require('./utils/messages')
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./utils/users')
 
+const emoji = require('node-emoji');
+
+const { log } = console;
+
+const pizza = emoji.get('pizza');
+log(pizza);
+
+
 const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
